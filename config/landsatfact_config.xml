@@ -1,0 +1,39 @@
+<config>
+	<application title="GroWNC GIS Viewer">
+	</application>
+	<extent wkid="102100" xmax="-8003760" xmaxZoom="-9167677" xmin="-9882276" xminZoom="-9239313" ymax="4710775" ymaxZoom="4303615" ymin="3806984" yminZoom="4173463" /> 
+	<server map_path="http://arcgisserver7.nemac.org/ArcGIS/">
+	</server>
+	<images>
+		<image label="Streets" name="Streets" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer" />
+		<image label="Basic" name="Basic" url="http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer" />
+		<image label="Relief" name="Relief" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer" />
+		<image label="Terrain" name="Terrain" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" />
+		<image label="Imagery" name="Imagery" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" />
+		<image label="Topo Map" name="Topo_Map" url="http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer" />
+		<image label="USA Topo" name="USA_Topo" url="http://server.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer" />
+		<image label="None" name="None" url="http://arcgisserver7.nemac.org/ArcGIS/rest/services/US/US_Jurisdictions_filled2/MapServer/" />
+        <image label="Google Streets" selected="true" name="Google Streets"/>
+	</images>
+	<mapviews>
+		<view label="GroWNC" name="GroWNC" selected="true">
+			<viewGroup name="LandsatFACT" />
+		</view>
+	</mapviews>
+	<wmsLayers>
+		<wmsGroup gid="G01" label="LandsatFACT" name="LandsatFACT">
+			<wmsSubgroup label="B7DiffTest">
+				<wmsLayer identify="true" layers="B7DIFF" legend="http://landsatfact-data-dev.nemac.org/html/rlayers?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=B7DIFF&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="B7DIFF" name="Tile Index" srs="EPSG:3785" styles="default" url="http://landsatfact-data-dev.nemac.org/html/rlayers?TRANSPARENT=true" visible="false" />
+                <wmsLayer identify="true" layers="B7DIFFM" legend="http://landsatfact-data-dev.nemac.org/html/rlayers?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=B7DIFFM&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="B7DIFFM" name="Mosaic" srs="EPSG:3785" styles="default" url="http://landsatfact-data-dev.nemac.org/html/rlayers?TRANSPARENT=true" visible="false" />
+                <wmsLayer identify="true" layers="B7DIFF_VRT" legend="http://landsatfact-data-dev.nemac.org/html/rlayers?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=B7DIFF_VRT&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="B7DIFF_VRT" name="VRT" srs="EPSG:3785" styles="default" url="http://landsatfact-data-dev.nemac.org/html/rlayers?TRANSPARENT=true" visible="false" />
+			</wmsSubgroup>
+		</wmsGroup>
+	</wmsLayers>
+	<tools>
+		<tool label="Print Map" name="Print" />
+		<tool label="Export Map to JPG" name="Export" />
+		<tool label="Identify Features" linkFields="" name="Identify" />
+		<tool helpText="Click the map to see NDVI for the point. Or, enter coordinates and click Make Graph." label="Graph NDVI" name="Phenograph" />
+		<tool helpText="Copy the URL below to share this map with someone else." label="Share this Map" name="ShareMap" />
+	</tools>
+</config>
