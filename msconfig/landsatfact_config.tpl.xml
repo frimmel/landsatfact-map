@@ -25,6 +25,7 @@
 			<wmsSubgroup label="B7DiffTest">
 				<wmsLayer identify="true" layers="B7DIFF" legend="%(SERVER_URL)s/html/rlayers?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=B7DIFF&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="B7DIFF" name="Tile Index" srs="EPSG:3785" styles="default" url="%(SERVER_URL)s/html/rlayers?TRANSPARENT=true" visible="false" />
                 <wmsLayer identify="true" layers="B7DIFFM" legend="%(SERVER_URL)s/html/rlayers?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=B7DIFFM&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="B7DIFFM" name="Mosaic" srs="EPSG:3785" styles="default" url="%(SERVER_URL)s/html/rlayers?TRANSPARENT=true" visible="false" />
+				<wmsLayer identify="true" layers="B7DIFFM_MASK" legend="%(SERVER_URL)s/html/rlayers?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=B7DIFFM&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="B7DIFFM_MASK" name="Mosaic with Mask" srs="EPSG:3785" styles="default" url="%(SERVER_URL)s/html/rlayers?TRANSPARENT=true" visible="false" />
                 <wmsLayer identify="true" layers="B7DIFF_VRT" legend="%(SERVER_URL)s/html/rlayers?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=B7DIFF_VRT&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="B7DIFF_VRT" name="VRT" srs="EPSG:3785" styles="default" url="%(SERVER_URL)s/html/rlayers?TRANSPARENT=true" visible="false" />
 			</wmsSubgroup>
 		</wmsGroup>
