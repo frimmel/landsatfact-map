@@ -29,7 +29,7 @@ class Template:
 
 template = Template("landsatfact_config.tpl.xml")
 		
-f = open("../config/landsatfact_config.xml", "w+")
+f = open("../html/config/landsatfact_config.xml", "w+")
 f.write(template.render( {
             'SERVER_URL'                            : SERVER_URL
             }))
