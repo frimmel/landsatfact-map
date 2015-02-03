@@ -40,7 +40,7 @@
 
     <script type="text/javascript">
       $('document').ready(function() {
-          seldon.init("config/landsatfact_config.xml","EPSG:900913");
+          seldon.init("http://landsatfact-data-dev.nemac.org/landsatfact_config.xml","EPSG:900913");
       });
     </script>
 
@@ -99,6 +99,9 @@
       <div id="mapBase" class="header-bar input input-select">
         <strong>Base Map:</strong><select id="baseCombo"></select>
       </div>
+      <div id="mapTheme" class="header-bar input input-select">
+        <strong>States:</strong><select id="themeCombo"></select>
+      </div> 
     </div>
 
     <div id="map"></div>
