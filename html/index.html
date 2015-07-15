@@ -118,11 +118,20 @@
 
     <div title="Map Tools" id="mapToolsDialog">
       <div id="mapToolsAccordion">
+        <h3>Masks</h3>
+        <div id="masks">
+	  <input class="mask-toggle" type="checkbox" name="Forest" id="Forest" value="MaskForForest"/><label for="Forest">Clouds and Gap</label><br/>
+	  <div id="forestMasks">
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="ConiferForest" id="ConiferForest" disabled="disabled" value="MaskForConiferForest"/><label for="ConiferForest">Clouds</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="DeciduousForest" id="DeciduousForest" disabled="disabled" value="MaskForDeciduousForest"/><label for="DeciduousForest">Gap</label><br/>
+	  </div>
+	  
+	</div>
         <h3>Share this Map</h3>
         <div><textarea class="shareMapUrl" readonly="true"></textarea></div>
         <h3>Legend (click to clear layer)</h3>
         <div id="legend"></div>
-      </div> 
+      </div>
     </div>
 
     <div id="propertyDialogsContainer"></div>
