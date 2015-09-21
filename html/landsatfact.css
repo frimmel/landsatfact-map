@@ -103,6 +103,10 @@ Splash Screen Styles
     margin: 0;
 }
 
+.splash-screen-header img {
+    width: 141px;
+}
+
 .splash-screen-branding a {
     color: #fff;
     text-decoration: underline;
