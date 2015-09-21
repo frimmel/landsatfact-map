@@ -120,10 +120,18 @@
       <div id="mapToolsAccordion">
         <h3>Masks</h3>
         <div id="masks">
-	  <input class="mask-toggle" type="checkbox" name="Forest" id="Forest" value="MaskForForest"/><label for="Forest">Clouds and Gap</label><br/>
-	  <div id="forestMasks">
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="ConiferForest" id="ConiferForest" disabled="disabled" value="MaskForConiferForest"/><label for="ConiferForest">Clouds</label><br/>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="DeciduousForest" id="DeciduousForest" disabled="disabled" value="MaskForDeciduousForest"/><label for="DeciduousForest">Gap</label><br/>
+	  <input class="mask-toggle" type="checkbox" name="CloudGap" id="CloudGap" value="MaskForCloudGap" data-mask-grouper="true" /><label for="CloudGap">Clouds and Gap</label><br/>
+	  <div>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Cloud" id="Cloud" disabled="disabled" value="MaskForCloud" data-mask-parent="MaskForCloudGap"/><label for="Cloud">Clouds</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Gap" id="Gap" disabled="disabled" value="MaskForGap" data-mask-parent="MaskForCloudGap"/><label for="Gap">Gap</label><br/>
+	  </div>
+	  <input class="mask-toggle" type="checkbox" name="Forest" id="Forest" value="MaskForForest" data-mask-grouper="true"/><label for="Forest">Show Forests</label><br/>
+	  <div>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Deciduous" id="Deciduous" disabled="disabled" value="MaskForDeciduous" data-mask-parent="MaskForForest"/><label for="Deciduous">Show Deciduous</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Evergreen" id="Evergreen" disabled="disabled" value="MaskForEvergreen" data-mask-parent="MaskForForest"/><label for="Evergreen">Show Evergreen</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Mixed" id="Mixed" disabled="disabled" value="MaskForMixed" data-mask-parent="MaskForForest"/><label for="Mixed">Show Mixed</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="ShrubScrub" id="ShrubScrub" disabled="disabled" value="MaskForShrubScrub" data-mask-parent="MaskForForest"/><label for="ShrubScrub">Show Shrub/Scrub</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="WoodyWetlands" id="WoodyWetlands" disabled="disabled" value="MaskForWoodyWetlands" data-mask-parent="MaskForForest"/><label for="WoodyWetlands">Show Woody Wetlands</label><br/>
 	  </div>
 	  
 	</div>
@@ -135,7 +143,7 @@
     </div>
 
     <div id="propertyDialogsContainer"></div>
-    <div id="splashScreenContainer" title="Land of Sky Map Viewer">
+    <div id="splashScreenContainer" title="LandSatFact Map Viewer">
       <div id="splashScreenContent"></div>
     </div>
   </body>
