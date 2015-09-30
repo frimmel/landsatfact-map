@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta name="description" content="Interactive map viewer for Land of Sky.">
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"/>
-	<script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+        <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
 
     <script type="text/javascript" src="libs/seldon/libs/multigraph/multigraph-min-4.0.js"></script>
     <script type="text/javascript">$ = window.multigraph.jQuery;</script>
@@ -120,11 +120,11 @@
       <div id="mapToolsAccordion">
         <h3>Masks</h3>
         <div id="masks">
-	  <input class="mask-toggle" type="checkbox" name="CloudGap" id="CloudGap" value="MaskForCloudGap" data-mask-grouper="true" /><label for="CloudGap">Clouds and Gap</label><br/>
-	  <div>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Cloud" id="Cloud" disabled="disabled" value="MaskForCloud" data-mask-parent="MaskForCloudGap"/><label for="Cloud">Clouds</label><br/>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Gap" id="Gap" disabled="disabled" value="MaskForGap" data-mask-parent="MaskForCloudGap"/><label for="Gap">Gap</label><br/>
-	  </div>
+          <input class="mask-modifier" type="checkbox" name="CloudGap" id="CloudGap" value="CloudGap" data-index="0" data-mask-grouper="true"/><label for="CloudGap">Clouds and Gap</label><br/>
+          <div>
+            <span>&nbsp&nbsp&nbsp</span><input class="mask-modifier" type="checkbox" name="Cloud" id="Cloud" value="Cloud" data-index="1" data-mask-parent="CloudGap"/><label for="Cloud">Clouds</label><br/>
+            <span>&nbsp&nbsp&nbsp</span><input class="mask-modifier" type="checkbox" name="Gap" id="Gap" value="Gap" data-index="2" data-mask-parent="CloudGap"/><label for="Gap">Gap</label><br/>
+          </div>
 	  <input class="mask-toggle" type="checkbox" name="Forest" id="Forest" value="MaskForForest" data-mask-grouper="true"/><label for="Forest">Show NLCD Forests</label><br/>
 	  <div>
 	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="Deciduous" id="Deciduous" disabled="disabled" value="MaskForNLCDDeciduous" data-mask-parent="MaskForForest"/><label for="Deciduous">Show NLCD Deciduous</label><br/>
@@ -135,11 +135,11 @@
 	  </div>
 	  <input class="mask-toggle" type="checkbox" name="CDLForest" id="CDLForest" value="MaskForCDLForest" data-mask-grouper="true"/><label for="CDLForest">Show CDL Forests</label><br/>
 	  <div>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLDeciduous" id="CDLDeciduous" disabled="disabled" value="MaskForCDLDeciduous" data-mask-parent="MaskForCDLForest"/><label for="CDLDeciduous">Show CDL Deciduous</label><br/>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLEvergreen" id="CDLEvergreen" disabled="disabled" value="MaskForCDLEvergreen" data-mask-parent="MaskForCDLForest"/><label for="CDLEvergreen">Show CDL Evergreen</label><br/>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLMixed" id="CDLMixed" disabled="disabled" value="MaskForCDLMixed" data-mask-parent="MaskForCDLForest"/><label for="CDLMixed">Show CDL Mixed</label><br/>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLShrubScrub" id="CDLShrubScrub" disabled="disabled" value="MaskForCDLShrubScrub" data-mask-parent="MaskForCDLForest"/><label for="CDLShrubScrub">Show CDL Shrub/Scrub</label><br/>
-	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLWoodyWetlands" id="CDLWoodyWetlands" disabled="disabled" value="MaskForCDLWoodyWetlands" data-mask-parent="MaskForCDLForest"/><label for="CDLWoodyWetlands">Show CDL Woody Wetlands</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLDeciduous" id="CDLDeciduous" value="MaskForCDLDeciduous" data-mask-parent="MaskForCDLForest"/><label for="CDLDeciduous">Show CDL Deciduous</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLEvergreen" id="CDLEvergreen" value="MaskForCDLEvergreen" data-mask-parent="MaskForCDLForest"/><label for="CDLEvergreen">Show CDL Evergreen</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLMixed" id="CDLMixed" value="MaskForCDLMixed" data-mask-parent="MaskForCDLForest"/><label for="CDLMixed">Show CDL Mixed</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLShrubScrub" id="CDLShrubScrub" value="MaskForCDLShrubScrub" data-mask-parent="MaskForCDLForest"/><label for="CDLShrubScrub">Show CDL Shrub/Scrub</label><br/>
+	    <span>&nbsp&nbsp&nbsp</span><input class="mask-toggle" type="checkbox" name="CDLWoodyWetlands" id="CDLWoodyWetlands" value="MaskForCDLWoodyWetlands" data-mask-parent="MaskForCDLForest"/><label for="CDLWoodyWetlands">Show CDL Woody Wetlands</label><br/>
 	  </div>
 	  
 	</div>
