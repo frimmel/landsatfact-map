@@ -1,5 +1,5 @@
 /*
-Custom overrides for the GroWNC viewer
+Custom overrides for the LandSatFACT viewer
 */
 
 /*
@@ -19,7 +19,7 @@ a {
 Header Styles
 */
 #titleBar {
-    background: #f68c3f;
+    background: #3e441e;
 }
 
 #titleBar h2 {
@@ -32,19 +32,33 @@ Header Styles
 }
 
 #header {
-    background: #fff;
-    border-bottom:thick solid #f68c3f;
+    background: #c27d30;
+    color: #fff;
+}
+
+#header div {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .header-bar img {
-     cursor:pointer;
+    width: 30px;
+    cursor:pointer;
+    border-radius: .3em;
+}
+
+.header-bar.btn-large img {
+    width: 30px;
 }
 
 /*
 Footer Styles
 */
 #footer {
-    background: #00aeef;
+    background: #c27d30;
     color: #fff;
 }
 
@@ -145,4 +159,55 @@ Phone Landscape
     #footer {
         font-size: 7pt;
     }
+}
+
+
+/**
+ * Overrides to reset the displays
+ */
+#btn-small-group {
+    padding-top: 0;
+}
+
+.btn-large {
+    top: 0;
+}
+ 
+.input-select {
+    padding-top: 0;
+}
+
+.icon:hover, .icon-active:hover {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .4);
+    opacity: 1;
+}
+
+#findAreaLabel {
+    margin-right: 2px;
+}
+
+#address_field {
+    box-sizing: border-box;
+    height: 27px;
+    border: 0;
+    padding-left: 6px;
+}
+
+#address_lookup {
+    box-sizing: border-box;
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+}
+
+#address_lookup img {
+    width: 20px;
+    height: 20px;
+}
+
+#address_field:focus {
+    outline: unset;
 }
