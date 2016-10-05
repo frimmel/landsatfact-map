@@ -242,3 +242,25 @@ Phone Landscape
 .marker-button-clear {
     background: red;
 }
+
+.marker-point-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 15px;
+}
+
+.marker-point-label {
+    line-height: 1.4em;
+}
+
+.marker-point-label textarea {
+    width: 100%;
+}
+
+.marker-point-coords-label {
+    font-weight: bold;
+}
+
+.marker-points {
+    height: 286px;
+    overflow: scroll;
+}
