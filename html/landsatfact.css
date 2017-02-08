@@ -126,6 +126,10 @@ Splash Screen Styles
     text-decoration: underline;
 }
 
+.accordion-more-info-button {
+    color: #0054a6;
+}
+
 /*
 Phone Portrait
 */
